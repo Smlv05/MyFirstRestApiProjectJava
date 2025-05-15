@@ -23,4 +23,10 @@ public class ProductService {
         Product savedProduct = productRepository.save(product);
         return productMapper.toProductResponse(savedProduct);
     }
+
+    public ProductResponse find(Long id) {
+        Product product = productRepository.findById(id).orElseThrow(RuntimeException::new);
+        return productMapper.toProductResponse(product);
+    }
 }
+
