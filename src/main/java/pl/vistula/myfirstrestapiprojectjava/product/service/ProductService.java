@@ -9,6 +9,9 @@ import pl.vistula.myfirstrestapiprojectjava.product.repository.ProductRepository
 import pl.vistula.myfirstrestapiprojectjava.product.support.ProductExceptionSupplier;
 import pl.vistula.myfirstrestapiprojectjava.product.support.ProductMapper;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class ProductService {
 
@@ -36,6 +39,16 @@ public class ProductService {
                 .orElseThrow(ProductExceptionSupplier.productNotFound(id));
         productRepository.save(productMapper.toProduct(product, updateProductRequest));
         return productMapper.toProductResponse(product);
+    }
+
+    public List<ProductResponse> findAll() {
+        return productRepository.findAll().stream().map(productMapper::toProductResponse).collect(Collectors.toList());
+    }
+
+    public void delete(Long id) {
+        Product product = productRepository.findById(id)
+                .orElseThrow(ProductExceptionSupplier.productNotFound(id));
+        productRepository.deleteById(product.getId());
     }
 }
 
