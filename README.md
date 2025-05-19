@@ -19,18 +19,18 @@ SCREENSHOTS
 
 Here are screenshots demonstrating the API's functionality:
 
-1. Successful POST Request: Creating a new product. (screenshot/POST.jpg)
+1. Successful POST Request: Creating a new product. ![Creating product](screenshot/POST.jpg)
 
-2. Successful GET Request: Retrieving a product. (screenshot/GET.jpg)
+2. Successful GET Request: Retrieving a product. ![Retrieving product](screenshot/GET.jpg)
 
-3. Successful PUT Request: Updating an existing product (screenshot/PUT.jpg)
+3. Successful PUT Request: Updating an existing product ![Updating product](screenshot/PUT.jpg)
 
-4. GET Request - Product Not Found: Attempting to retrieve a non-existent product (screenshot/GET not found.jpg)
+4. GET Request - Product Not Found: Attempting to retrieve a non-existent product ![Retrieving non-existing](screenshot/GET_not_found.jpg)
 
-5. Successful DELETE Request: Deleting an existing product (screenshot/DELETE.jpg)
+5. Successful DELETE Request: Deleting an existing product ![Deleting product](screenshot/DELETE.jpg)
 
-6. DELETE Request - Product Not Found: Attempting to delete a non-existent product (screenshot/DELETE not found.jpg)
+6. DELETE Request - Product Not Found: Attempting to delete a non-existent product ![Deleting non-existing](screenshot/DELETE_not_found.jpg)
 
-7. H2 Console: Screenshot of the H2 Console showing database (screenshot/H2 console.jpg)
+7. H2 Console: Screenshot of the H2 Console showing database ![H2 console](screenshot/H2_console.jpg)
 
-8. H2 Console - Updated Database: Screenshot of the H2 Console showing updated database (screenshot/H2 console updated.jpg)
+8. H2 Console - Updated Database: Screenshot of the H2 Console showing updated database ![Updated H2 console](screenshot/H2_console_updated.jpg)
